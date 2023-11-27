@@ -1,3 +1,3 @@
 NodeJs with express project 
 
-//For start server "npx start" bc I alw forgot it
+//For start server "npx start" bc I alw forget it
