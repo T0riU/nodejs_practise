@@ -1,4 +1,5 @@
 const express = require('express');
+const productRoutes = require('./product.routes');
 
 const app = express();
 const port = 8000;
@@ -17,6 +18,8 @@ app.get('/products/:brand', (req, res) => {
     const filteredProducts = products.filter(product => product.brand === brand);
     res.json(filteredProducts);
 });
+
+app.use(productRoutes);
 
 app.listen(port,
     () => console.log(`server start at http://localhost:${port}/`));
