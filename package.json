@@ -5,12 +5,14 @@
     "main": "src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "server": "node src/index.js",
-        "migration:generate": "drizzle-kit generate:pg"
+        "server": "node --watch src/index.js",
+        "migration:generate": "drizzle-kit generate:pg",
+        "migration:push": "drizzle-kit push:pg"
     },
-    "author": "maksym bychok",
+    "author": "Repin Oleh",
     "license": "ISC",
     "dependencies": {
+        "body-parser": "^1.20.2",
         "drizzle-orm": "^0.30.2",
         "express": "^4.18.2",
         "pg": "^8.11.3"
